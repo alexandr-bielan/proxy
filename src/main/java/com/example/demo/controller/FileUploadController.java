@@ -13,10 +13,10 @@ import java.io.IOException;
 public class FileUploadController {
 
     @Autowired
-    FileUploadService fileUploadService;
+    FileUploadService fileUploadServiceERer;
 
     @PostMapping
     public void uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
-        fileUploadService.uploadFile(file);
+        fileUploadServiceERer.uploadFile(file);
     }
 }
